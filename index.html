@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Inicio</title>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+                <li><a href="/about.html">Sobre mí</a></li>
+                <li><a href="/plantas.html">Plantas</a></li>
+                <li><a href="/actividad.html">Actividad 1 - Proyecto de Software</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <input type="radio" name="tipo" id="todos" checked>
+            <label for="todos">Mostrar Todos</label>
+
+            <input type="radio" name="tipo" id="interior">
+            <label for="interior">Plantas de Interior</label>
+
+            <input type="radio" name="tipo" id="exterior">
+            <label for="exterior">Plantas de Exterior</label>
+
+            <div class="cards-container">
+                <!-- Tarjetas de Plantas de Interior -->
+                <div class="card interior">
+                    <h3>Cactus</h3>
+                    <img src="/imagenes/cactus.jpg" alt="cactus">
+                    <a href="#">Más información</a>
+                </div>
+
+                <div class="card interior">
+                    <h3>Sansevieria</h3>
+                    <img src="/imagenes/sansevieria.png" alt="sansevieria">
+                    <a href="#">Más información</a>
+                </div>
+
+                <div class="card interior">
+                    <h3>Potus</h3>
+                    <img src="/imagenes/potus.jpg" alt="potus">
+                    <a href="#">Más información</a>
+                </div>
+                <!-- Tarjetas de Plantas de Exterior -->
+                <div class="card exterior">
+                    <h3>Clavel</h3>
+                    <img src="/imagenes/clavel.jpg" alt="clavel">
+                    <a href="#">Más información</a>
+                </div>
+                <div class="card exterior">
+                    <h3>Jazmin</h3>
+                    <img src="/imagenes/jazmin_chino.jpg" alt="jazmin">
+                    <a href="#">Más información</a>
+                </div>
+                <div class="card exterior">
+                    <h3>Lirio</h3>
+                    <img src="/imagenes/lirio_azul.jpg" alt="lirio">
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

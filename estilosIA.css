@@ -1,0 +1,333 @@
+/* Reset some default styles for the body and ul */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #939c9d; /* Change to a different color on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* Estilos de filtrado de imágenes */
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Ocultar todas las tarjetas inicialmente */
+}
+
+.card img {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Mostrar todas las tarjetas cuando no hay ninguna opción seleccionada */
+#todos:checked~.cards-container .card {
+    display: block;
+}
+
+/* Mostrar tarjetas de "Interior" cuando se selecciona esa opción */
+#interior:checked~.cards-container .interior {
+    display: block;
+}
+
+/* Mostrar tarjetas de "Exterior" cuando se selecciona esa opción */
+#exterior:checked~.cards-container .exterior {
+    display: block;
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Estilos para las etiquetas de radio personalizadas */
+.container label {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+/* Estilos de Sobre Mí */
+
+
+/* Estilos para la sección "Nosotros" */
+.nosotros {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.nosotros-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nosotros-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nosotros-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nosotros-content {
+        padding: 20px;
+    }
+
+    .nosotros-content h2 {
+        font-size: 20px;
+    }
+
+    .nosotros-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Estilos para la lista de tarjetas de plantas */
+.plant-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    max-width: 400px;
+    margin: 20px;
+}
+
+/* Estilos para las imágenes de las plantas */
+.plant-card img {
+    width: 12rem;
+    height: auto;
+}
+
+/* Estilos para los títulos de las plantas */
+.plant-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Estilos para los enlaces de más información */
+.plant-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .plant-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category {
+        text-align: center;
+    }
+}
+
+.actividad-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.actividad-container img{
+    padding: 1rem;
+}
